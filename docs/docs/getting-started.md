@@ -17,6 +17,7 @@ $ npm install --save tedious // MSSQL
 Sequelize will setup a connection pool on initialization so you should ideally only ever create one instance per database.
 
 ```js
+var Sequelize = require('sequelize');
 var sequelize = new Sequelize('database', 'username', 'password', {
   host: 'localhost',
   dialect: 'mysql'|'mariadb'|'sqlite'|'postgres'|'mssql',
